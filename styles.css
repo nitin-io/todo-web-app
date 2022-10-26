@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    border-radius: 4px;
+}
+
+body {
+    background-color: #fff;
+    color: #1F1D36;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.top-container {
+    margin: 1% auto;
+    pointer-events: none;
+}
+
+.container {
+    box-sizing: border-box;
+    background-color: #1F1D36;
+    width: 80vw;
+    margin: auto;
+    min-height: 80vh;
+    padding: 5%;
+    box-shadow: 0 0 8px 2px #3F3351;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 8px;
+}
+
+.posts > div {
+    display: grid;
+    grid-template-columns: 82% 18%;
+    background-color: #3F3351;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input-container input {
+    width: 60%;
+    height: 25px;
+}
+
+.input-container button {
+    border-style: none;
+    background-color: #fff;
+    color: #00000088;
+}
+
+.btn {
+    border-style: none;
+    background-color: #fff;
+    color: #00000088;
+}
