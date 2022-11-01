@@ -6,23 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo-Web-App</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
 </head>
 <body>
+
     <div class="top-container">
         <h1>ToDo Web App</h1>
         <p>Here you can add your TO-DOs.</p>
     </div>
 
     <div class="container">
-        <div class="input-container">
-            <input type="text" placeholder="Enter your task" id="todo-text">
-            <button type="submit" class="btn" onclick="gettingText()">Add To List</button>
-        </div>
+        <button type="button" class="btn" id="add-task-btn">Add your task</button>
         <div class="posts">
-
+            <div class="post">
+                <h1 id="task-title">My First Task</h1>
+                <p id="task-discription">This is my first's task's dicription. How you doing. Is everything okay or not ? tell me, don't worry.</p>
+            </div>
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <section class="modal-container">
+        
+            <form action="" id="todo-form">
+                <label for="task-title">Title</label>
+                <input type="text" name="" id="task-title-input" placeholder="Your Title Here">
+                <label for="task-due-date">Due Date</label>
+                <input type="date" name="" id="task-due-date" placeholder="Your Due Date Here">
+                <label for="task-discription">Discription</label>
+                <input type="text" name="" id="task-discription-input" placeholder="Your Discription Here">
+                <div>
+                    <button type="button" class="btn" id="close-btn">Close</button>
+                    <button type="submit" class="btn">Add</button>
+                </div>
+            </form>
+       
+    </section>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
+<script src="js/bootstrap.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

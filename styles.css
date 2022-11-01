@@ -8,18 +8,19 @@
 body {
     background-color: #fff;
     color: #1F1D36;
-    text-align: center;
     font-family: 'Noto Sans', sans-serif;
 }
 
 .top-container {
     margin: 1% auto;
     pointer-events: none;
+    text-align: center;
 }
 
 .container {
     box-sizing: border-box;
     background-color: #1F1D36;
+    color: #fff;
     width: 80vw;
     margin: auto;
     min-height: 80vh;
@@ -35,32 +36,67 @@ body {
 }
 
 .posts > div {
-    display: grid;
-    grid-template-columns: 82% 18%;
-    background-color: #3F3351;
-    color: #fff;
-    text-align: left;
-    padding: 10px;
-}
-
-.input-container {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.7);
+    color: #1F1D36;
+    padding: 1%;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.input-container input {
-    width: 60%;
-    height: 25px;
-}
-
-.input-container button {
-    border-style: none;
-    background-color: #fff;
-    color: #00000088;
+#task-title {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
 }
 
 .btn {
     border-style: none;
     background-color: #fff;
     color: #00000088;
+    padding: 10px 10px;
+    font-size: large;
+    text-transform: uppercase;
 }
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.2);
+}
+
+input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border-style: none;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+}
+
+input:focus {
+    outline: none;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    height: 60%;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2% 4% 2% 2%;
+}
+
+form .btn {
+    width: 20%;
+}
+
