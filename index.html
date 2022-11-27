@@ -17,34 +17,18 @@
     </div>
 
     <div class="container">
-        <button type="button" class="btn" id="add-task-btn">Add your task</button>
-        <div class="posts">
-            <div class="post">
-                <h1 id="task-title">My First Task</h1>
-                <p id="task-discription">This is my first's task's dicription. How you doing. Is everything okay or not ? tell me, don't worry.</p>
-            </div>
+        <div class="posts" id="posts">
+            
         </div>
-    </div>
 
-    <section class="modal-container">
-        
-            <form action="" id="todo-form">
-                <label for="task-title">Title</label>
-                <input type="text" name="" id="task-title-input" placeholder="Your Title Here">
-                <label for="task-due-date">Due Date</label>
-                <input type="date" name="" id="task-due-date" placeholder="Your Due Date Here">
-                <label for="task-discription">Discription</label>
-                <input type="text" name="" id="task-discription-input" placeholder="Your Discription Here">
-                <div>
-                    <button type="button" class="btn" id="close-btn">Close</button>
-                    <button type="submit" class="btn">Add</button>
-                </div>
+            <form class="input-container">
+                <input type="text" id="input" placeholder="Enter The Task Here.">
+                <button class="btn" type="submit">ADD TASK</button>
             </form>
-       
-    </section>
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
-<script src="js/bootstrap.js"></script>
+            <p id="warning"></p>
+    </div>
+    
 <script src="index.js"></script>
 </body>
 </html>
